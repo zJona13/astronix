@@ -3,7 +3,7 @@ import imageLocal from '../assets/img/Logo 2 - sin fondo.png';
 import { Image } from 'astro:assets';
 ---
 
-<header class="py-4 px-4 sm:px-6 md:px-12 lg:px-20 flex items-center fixed top-0 w-full justify-between z-40 bg-gray-950 bg-opacity-50 backdrop-blur-lg" id="home">
+<header class="py-4 px-4 sm:px-6 md:px-12 lg:px-20 flex items-center fixed top-0 w-full justify-between z-40 bg-gray-950 bg-opacity-50 backdrop-blur-lg">
 
     <div class="flex items-center flex-grow basis-0">
         <a href="#"><Image class="h-8 w-8 sm:h-10 sm:w-10" src={imageLocal} alt='Logo Astronix'/></a>
@@ -44,9 +44,9 @@ import { Image } from 'astro:assets';
 
     <nav id="mobile-menu" class="lg:hidden absolute top-16 right-0 w-48 bg-black rounded-md hidden">
         <ul class="flex flex-col text-sm">
-            <li><a href="#" class="block px-4 py-2">Inicio</a></li>
-            <li><a href="#" class="block px-4 py-2">Sobre Nosotros</a></li>
-            <li><a href="#" class="block px-4 py-2">Servicios</a></li>
+            <li><a href="#home" class="block px-4 py-2">Inicio</a></li>
+            <li><a href="#about" class="block px-4 py-2">Sobre Nosotros</a></li>
+            <li><a href="#services" class="block px-4 py-2">Servicios</a></li>
             <li><a href="#" class="block px-4 py-2">Nuestro Equipo</a></li>
             <li><a href="#" class="block px-4 py-2">Contáctanos</a></li>
         </ul>
