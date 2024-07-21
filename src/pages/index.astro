@@ -1,51 +1,16 @@
 ---
+import LandingHeader from '../components/LandingHeader.astro';
 import Layout from '../layouts/Layout.astro';
-import imageLocal from '../assets/img/Logo 2 - sin fondo.png';
-import { Image } from 'astro:assets';
+import HeaderSection from '../components/HeaderSection.astro'
+import About from '../components/About.astro'
+import LandingServices from '../components/LandingServices.astro';
 ---
 
 <Layout title="Astronix">
-	<main>
-		<header class="py-4 px-20 flex items-center fixed top-0 w-full justify-between z-40">
-			<div class="flex flex-grow basis-0">
-				<a href="#"><Image class="h-10 w-10" src={imageLocal} alt='Logo Astronix'/></a>
-			</div>
-			
-			<nav>
-				<ul class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Sobre Nosotros</a></li>
-					<li><a href="#">Servicios</a></li>
-					<li><a href="#">Nuestro Equipo</a></li>
-					<li><a href="#">Contáctanos</a></li>
-				</ul>
-			</nav>
-
-			<nav class="flex flex-grow justify-end basis-0">
-				<ul class="flex text-base [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2">
-					<li><a href="#"><span class="icon-[mage--facebook-circle]"></span></a></li>
-					<li><a href="#"><span class="icon-[mage--instagram-circle]"></span></a></li>
-					<li><a href="#"><span class="icon-[mage--tiktok-circle]"></span></a></li>
-				</ul>
-			</nav>
-
-		</header>
-		
-		<section class="bg-black h-screen w-screen text-center relative overflow-hidden">
-			<div class="z-30 relative">
-				<header>
-					<h2 class="pt-80 text-8xl font-semibold">Bienvenido a Astronix</h2>
-					<p class="pt-6 text-[23px]">Creamos soluciones digitales innovadoras para tu negocio</p>
-				</header>
-				
-				<footer class="pt-6">
-					<a href="#" class="text-lg border-2 border-black bg-black px-6 py-2 hover:bg-white hover:text-black hover:border-white transition-colors duration-300">Conoce más</a>
-				</footer>
-			</div>
-
-			<div class="absolute top-0 bottom-0 h-full w-full z-10">
-				<video autoplay muted loop src="/universe.mp4" class="object-center object-cover h-full w-full"></video>
-			</div>
-		</section>
-	</main>
+    <main class="overflow-x-hidden">
+        <LandingHeader />
+        <HeaderSection />
+        <About />
+        <LandingServices />
+    </main>
 </Layout>
