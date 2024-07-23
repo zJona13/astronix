@@ -1,0 +1,25 @@
+---
+import imageLocal from '../assets/img/Logo 2 - sin fondo.png';
+import { Image } from 'astro:assets';
+---
+
+<footer class="bg-black text-white">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col items-center sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex justify-center mb-4 sm:mb-0">
+            <a href="#home">
+                <Image class="h-8 w-8 sm:h-10 sm:w-10" src={imageLocal} alt='Logo Astronix'/>
+            </a>
+        </div>
+        <nav class="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0 sm:justify-end items-center">
+            <a href="#home" class="text-sm text-white hover:text-gray-400">Inicio</a>
+            <a href="#about" class="text-sm text-white hover:text-gray-400">Sobre Nosotros</a>
+            <a href="#services" class="text-sm text-white hover:text-gray-400">Servicios</a>
+            <a href="#team" class="text-sm text-white hover:text-gray-400">Nuestro Equipo</a>
+            <a href="#contacto" class="text-sm text-white hover:text-gray-400">Contáctanos</a>
+        </nav>
+    </div>
+    <div class="border-t border-white">
+        <p class="text-center text-xs text-white py-4">© 2024 Astronix. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
