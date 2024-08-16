@@ -37,7 +37,7 @@ El proyecto sigue una estructura de carpetas clara y organizada:
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/usuario/astronix.git
+   git clone https://github.com/zJona13/astronix.git
    ```
 2. **Navega al directorio del proyecto**:
    ```bash
