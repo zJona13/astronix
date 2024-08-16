@@ -1,54 +1,59 @@
-# Astro Starter Kit: Basics
+# Astronix
 
-```sh
-npm create astro@latest -- --template basics
+**Astronix** es un proyecto universitario enfocado en el desarrollo de una página web para una startup ficticia. La página está construida utilizando **Astro**, **Tailwind CSS**, y **JavaScript**, con el objetivo de proporcionar una interfaz moderna y responsiva.
+
+## Descripción del Proyecto
+
+Astronix es una plataforma diseñada para representar la identidad de una startup tecnológica. El sitio web ofrece una presentación clara y atractiva de los servicios y productos ofrecidos, con un diseño enfocado en la simplicidad y usabilidad.
+
+## Tecnologías Utilizadas
+
+- **Astro**
+- **Tailwind CSS**
+- **JavaScript**
+
+## Estructura del Proyecto
+
+El proyecto sigue una estructura de carpetas clara y organizada:
+
+```
+/src
+  /components   # Componentes reutilizables de la UI
+  /layouts      # Layouts para las diferentes páginas
+  /pages        # Páginas principales del sitio web
+/public         # Archivos estáticos como imágenes y fuentes
+/styles         # Archivos de estilo CSS, incluyendo configuraciones de Tailwind CSS
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Funcionalidades
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Página de Inicio**: Presentación general de la startup con información clave.
+- **Sobre Nosotros**: Presentación breve de quienes somos.
+- **Sección de Servicios**: Detalles sobre los servicios que ofrece la startup.
+- **Contacto**: Formulario y detalles para contactar con la empresa.
+- **Responsive Design**: Adaptado para verse bien en cualquier dispositivo, desde móviles hasta pantallas grandes.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Instalación
 
-## 🚀 Project Structure
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/usuario/astronix.git
+   ```
+2. **Navega al directorio del proyecto**:
+   ```bash
+   cd astronix
+   ```
+3. **Instala las dependencias**:
+   ```bash
+   npm install
+   ```
+4. **Inicia el servidor de desarrollo**:
+   ```bash
+   npm run dev
+   ```
 
-Inside of your Astro project, you'll see the following folders and files:
+## Despliegue
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+https://app.netlify.com/sites/astronixdev/overview
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
